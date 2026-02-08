@@ -8,11 +8,12 @@ def test_str():
 	print(name[0:3])
 	print(len(name))
 
-def test_str_formatting():
 	age = 28
 
 	print(f"My name is {name} and I am {age} years old")
 	print("My name is {} and I am {} years old".format(name, age))
+
+	
 
 def test_typecasting():
 	age_str = "28"
@@ -27,10 +28,10 @@ def test_typecasting():
 	print(type(salary_float))
 
 def test_input_conversion():
-	user_age = input("Enter your age: ")
-	user_age_int = int(user_age)
+    user_age = "28"   # simulated input
+    user_age_int = int(user_age)
 
-	print(f"Next year you will be {user_age_int + 1}")
+    assert user_age_int + 1 == 29
 
 def test_boolean_casting():
 	print(bool(0))
