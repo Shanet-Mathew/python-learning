@@ -5,9 +5,22 @@ venv/
 # Python cache
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
 # Pytest cache
 .pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+
+# Build / distribution
+build/
+dist/
+*.egg-info/
 
 # macOS files
 .DS_Store
@@ -16,7 +29,5 @@ __pycache__/
 .vscode/
 .idea/
 
-# Logs and reports
+# Logs
 *.log
-htmlcov/
-.coverage
