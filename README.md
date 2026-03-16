@@ -64,3 +64,12 @@ python -m pip install --upgrade pip
 
 # Install dependencies
 pip install -r requirements.txt
+
+#Run All Tests
+pytest -v
+
+# Run Only Smoke Tests
+pytest -v -m smoke
+
+#Run Only Regression Tests
+pytest -v -m regression
