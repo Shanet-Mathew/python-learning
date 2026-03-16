@@ -73,3 +73,6 @@ pytest -v -m smoke
 
 #Run Only Regression Tests
 pytest -v -m regression
+
+#Run only API tests
+pytest -m api
