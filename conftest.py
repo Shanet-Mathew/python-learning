@@ -20,6 +20,20 @@ def api_session():
     session.close() 
 
 
+@pytest.fixture
+def module_config():
+    return {
+        "environment": "staging",
+        "version": "1.0"
+    }
+
+
+@pytest.fixture
+def api_base_url():
+    """
+    Base URL for API tests
+    """
+    return "https://jsonplaceholder.typicode.com"
 
 
 # import pytest

@@ -1,3 +1,6 @@
+import pytest
+from basics.markers_demo import add
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [
