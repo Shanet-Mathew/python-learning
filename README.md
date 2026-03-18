@@ -43,36 +43,52 @@ Python virtual environment (not committed to Git).
 - macOS or Linux
 
 ---
+## Features Covered
 
-## Project Setup
+Pytest fixtures (function and session scope)
 
-```bash
-# Clone repository
-git clone <your-repo-url>
+Parametrized testing
 
-# Navigate into project
-cd <repo-name>
+Custom markers
 
-# Create virtual environment
+API testing using requests
+
+Centralized configuration using conftest.py
+
+Clean project structure for scalability
+
+---
+## Setup Instructions
+
+Clone the repository
+
+git clone
+cd python-learning
+
+Create virtual environment
+
 python3 -m venv venv
+source venv/bin/activate (Mac/Linux)
+venv\Scripts\activate (Windows)
 
-# Activate virtual environment
-source venv/bin/activate
+## Install dependencies
 
-# Upgrade pip
-python -m pip install --upgrade pip
-
-# Install dependencies
 pip install -r requirements.txt
 
-#Run All Tests
+How to Run Tests
+
+Run all tests:
+
 pytest -v
 
-# Run Only Smoke Tests
-pytest -v -m smoke
+Run specific folder:
 
-#Run Only Regression Tests
-pytest -v -m regression
+pytest -v tests/
 
-#Run only API tests
-pytest -m api
+Run API tests:
+
+pytest -v api_tests/
+
+Run tests using markers:
+
+pytest -m smoke
